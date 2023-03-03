@@ -44,6 +44,6 @@ while add_room == "y":
 print(f"Total room size is: {total_size} m2") # Output total room size
 print("The average room size is: ", total_size/(room_number-1),"m2") # Output average room size
 # Sort the dictionary ascending
-new_all_rooms_dict = sorted(all_rooms_dict.items(), key=operator.itemgetter(1) reverse=False)
+new_all_rooms_dict = sorted(all_rooms_dict.items(), key=operator.itemgetter(1), reverse=False)
 sorted_all_rooms_dict = dict(new_all_rooms_dict)
 print("Summary:", sorted_all_rooms_dict)
